@@ -29,7 +29,12 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
   };
 
   useEffect(() => {
-    if (data.gender && data.prov) {
+   /* console.log('useeffect called!')
+    console.log(data);
+    console.log(vizIndex);
+    console.log(clickType); */
+
+    if (data) {
       vizIndex === 1
         ? drawGroupedBars(
             svgRef.current,
@@ -69,11 +74,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             "update",
             0.3
           );
-          
-        console.log('useeffect called!')
-        console.log(data);
-        console.log(vizIndex);
-        console.log(clickType);
+        
     }
   }, [data, vizIndex, clickType]);
 

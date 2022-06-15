@@ -6,7 +6,6 @@ function StackedBarVertical({ svgWidth, svgHeight }) {
   const data = useData();
 
   useEffect(() => {
-    console.log(data);
   }, [data]);
 
   return (

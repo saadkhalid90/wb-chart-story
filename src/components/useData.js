@@ -9,18 +9,22 @@ export function useData(){
 
   useEffect(() => {
     csv(riskData, preProc1)
-      .then(data => setData(data))
-  }, []);
+      .then(data => setData(data));
 
-  useEffect(() => {
+
     csv(riskDataProv, preProc2)
-      .then(dataProv => setDataProv(dataProv))
+      .then(dataProv => setDataProv(dataProv));
   }, []);
 
-  return {
-    gender: data,
-    prov: dataProv
-  };
+  if (dataProv && data) {
+    return {
+      gender: data,
+      prov: dataProv
+    };
+  }
+  else {
+    return null;
+  }
 }
 
 function preProc1(row){

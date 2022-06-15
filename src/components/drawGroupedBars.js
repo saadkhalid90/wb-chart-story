@@ -14,7 +14,7 @@ function drawGroupedBars(
   type,
   xPadding
 ) {
-  console.log('groupBars Called!')
+ // console.log('groupBars Called!')
   // one entry for each bar (for each group flesh out the data and use flatmap to get one consolidated array)
 
   const longData = groups.flatMap((group) =>
@@ -67,13 +67,11 @@ function drawGroupedBars(
   const xAxis = d3.axisBottom(xScale);
   const yAxis = d3.axisLeft(yScale);
 
-  const chartElements = d3.select(svgRef).select("g.chart_elements");
-  //console.log(chartElements);
-  //console.log(checkIfSelectEmpty(chartElements));
+  let chartElements = d3.select(svgRef).select("g.chart_elements");
 
   if (type === "draw") {
     chartElements.selectAll('*').remove()
-  }
+  } 
 
   if (checkIfSelectEmpty(chartElements)) {
     const svgG = d3
@@ -107,14 +105,19 @@ function drawGroupedBars(
 
     const yAxisText = yAxisG.selectAll("text").attr("font-size", "0.8rem");
     const xAxisText = xAxisG.selectAll("text").attr("font-size", "1rem");
-  }
+
+    chartElements = d3.select(svgRef).select("g.chart_elements");
+  } 
+
+  console.log(chartElements._groups[0]);
 
   let bars = chartElements.selectAll("rect").data(longData);
 
+
   if (type === "draw") {
-    console.log(longData);
+  /*  console.log(longData);
     console.log(bars);
-    console.log(type);
+    console.log(type); */
 
     bars = bars
     //enter
@@ -127,7 +130,6 @@ function drawGroupedBars(
       .attr("height", (d) => 0)
       .attr("fill", (d) => colScale(d.group));
 
-    console.log(bars);
   }
 
   bars
