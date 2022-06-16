@@ -6,7 +6,7 @@ import styles from "./css-modules/dataStoryComp.module.css";
 import { drawGroupedBars, removeSVGContent } from "./drawGroupedBars";
 import React from "react";
 
-const chartMargins = { top: 50, bottom: 20, left: 50, right: 20 };
+const chartMargins = { top: 100, bottom: 80, left: 50, right: 20 };
 
 function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
   const captions = [
@@ -18,7 +18,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
     <span>
       For these children, the{" "}
       <b>likelihood of being developmentally on track</b> is inversely related
-      to the <b>number of risk they face</b>
+      to the <b>number of risks they face</b>
     </span>,
     <span>
       We do observe some{" "}
@@ -76,7 +76,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             ["Female", "Male"],
             "Number of Risk Factors",
             clickType === "forward" ? "draw" : "update",
-            0.4
+            0.4,
+            "Children facing risks to on track development outcomes (by gender)"
           )
         : vizIndex === 2
         ? drawGroupedBars(
@@ -86,7 +87,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             ["Female_DOT", "Male_DOT"],
             "Number of Risk Factors",
             clickType === "forward" ? "update" : "draw",
-            0.4
+            0.4,
+            "Children on track development outcomes (by gender)"
           )
         : vizIndex === 3
         ? drawGroupedBars(
@@ -96,7 +98,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             ["Punjab", "Sindh", "KP", "Balochistan"],
             "Number of Risk Factors",
             clickType === "forward" ? "draw" : "update",
-            0.3
+            0.3,
+            "Children facing risks to on track development outcomes (by province)"
           )
         : drawGroupedBars(
             svgRef.current,
@@ -105,7 +108,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             ["Punjab_DOT", "Sindh_DOT", "KP_DOT", "Balochistan_DOT"],
             "Number of Risk Factors",
             "update",
-            0.3
+            0.3,
+            "Children facing risks to on track development outcomes (by province)"
           );
 
       console.log("useeffect called!");

@@ -11,6 +11,14 @@
   width: 100%;
 }
 
+.chevronContainer svg {
+  fill: #01579B
+}
+
+.chart_contain svg text {
+  fill: #313131
+}
+
 .stateShow {
   font-size: 12px;
   font-weight: bold;
@@ -23,6 +31,7 @@
 
 .chart_desc {
   width: 85%;
+  color: #393939
 }
 
 .desc_fade {
@@ -60,7 +69,7 @@
 }
 
 .chevContainer svg:hover{
-  fill: #616161;
+  fill: #278723;
 }
 
 .chart_contain {

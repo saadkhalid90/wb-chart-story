@@ -1,8 +1,8 @@
 import * as d3 from "d3";
-import { scaleLinear } from "d3";
+import { scaleLinear, svg } from "d3";
 
-function removeSVGContent(svgRef){
-  d3.select(svgRef).selectAll('*').remove();
+function removeSVGContent(svgRef) {
+  d3.select(svgRef).selectAll("*").remove();
 }
 
 function drawGroupedBars(
@@ -12,7 +12,8 @@ function drawGroupedBars(
   groups,
   categVar,
   type,
-  xPadding
+  xPadding,
+  title
 ) {
   // one entry for each bar (for each group flesh out the data and use flatmap to get one consolidated array)
 
@@ -69,7 +70,7 @@ function drawGroupedBars(
   const chartElements = d3.select(svgRef).select("g.chart_elements");
 
   if (type === "draw") {
-    chartElements.selectAll('*').remove()
+    chartElements.selectAll("*").remove();
   }
 
   if (checkIfSelectEmpty(chartElements)) {
@@ -87,8 +88,8 @@ function drawGroupedBars(
         `translate(${margins.left} ${svgHeight - margins.bottom + 5})`
       )
       .classed("xAxisG", true)
-      .call(xAxis)
-      
+      .call(xAxis);
+
     xAxisG.selectAll("text").style("font-size", "18px");
     xAxisG.selectAll("line").style("opacity", "0");
 
@@ -105,14 +106,53 @@ function drawGroupedBars(
     //xAxisG.selectAll("line").style("stroke", "none");
 
     const yAxisText = yAxisG.selectAll("text").attr("font-size", "0.8rem");
+    xAxisG
+      .append("text")
+      .attr("class", "xAxis-title")
+      .text("Number of risks")
+      .attr("transform", "translate(0 50)")
+      .style("fill", "black")
+      .style("text-anchor", "start")
+      .style("font-size", "14px")
+      .style("fill", "#616161");
   }
 
   let bars = d3.select("g.chart_elements").selectAll("rect").data(longData);
 
-  if (type === "draw") {
+  d3.select("g.chart_elements").selectAll("text.chart_title").remove();
 
+  d3.select("g.chart_elements")
+    .append("text")
+    .attr("class", "chart_title")
+    .attr("transform", `translate(-${margins.left} -75)`)
+    .text(title)
+    .style("fill-opacity", 0)
+    .style("font-size", "17px")
+    .style("font-weight", 600)
+    .attr("dy", "-8px")
+    .transition()
+    .duration(750)
+    .style("fill-opacity", 1)
+    .style("fill", "#616161")
+    .attr("dy", "0px");
+
+  d3.select("g.chart_elements")
+    .append("text")
+    .attr("class", "chart_title")
+    .attr("transform", `translate(-${margins.left} -60)`)
+    .text("(Percent)")
+    .style("fill-opacity", 0)
+    .style("font-size", "12px")
+    .attr("dy", "-8px")
+    .transition()
+    .duration(750)
+    .style("fill-opacity", 1)
+    .style("fill", "#616161")
+    .attr("dy", "0px");
+
+  if (type === "draw") {
     bars = bars
-    //enter
+      //enter
       .enter()
       .append("rect")
       .attr("x", (d) => xScale(d.riskFactors) + xzScale(d.group))
@@ -133,9 +173,57 @@ function drawGroupedBars(
   d3.select("g.yAxisG").transition().duration(750).call(yAxis);
   d3.select("g.xAxisG").transition().duration(750).call(xAxis);
 
-  d3.select("g.xAxisG").selectAll("text").style("font-size", "18px");
+  d3.select("g.xAxisG")
+    .selectAll("g.tick")
+    .select("text")
+    .style("font-size", "18px");
   d3.select("g.xAxisG").selectAll("line").style("opacity", "0");
   d3.select("g.yAxisG").selectAll("text").attr("font-size", "0.8rem");
+
+  removeAndDrawLegend(d3.select("g.chart_elements"), colScale, 100, margins);
+}
+
+function removeAndDrawLegend(parentSelection, colScale, separation, margins) {
+  parentSelection.select("g.color-legend").remove();
+
+  const legendParentGrp = parentSelection
+    .append("g")
+    .attr("transform", `translate(-${margins.left} -45)`)
+    .attr("dy", "-8px");
+
+  legendParentGrp
+    .style("opacity", "0")
+    .transition()
+    .duration(750)
+    .attr("dy", "0px")
+    .style("opacity", "1");
+
+  const legendGrps = legendParentGrp
+    .attr("class", "color-legend")
+    .selectAll("g")
+    .data(colScale.domain())
+    .enter()
+    .append("g")
+    .attr("transform", (d, i) => `translate(${i * separation}, 0)`);
+
+  console.log(legendGrps);
+
+  legendGrps
+    .append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", 20)
+    .attr("height", 12)
+    .attr("fill", (d) => colScale(d));
+
+  legendGrps
+    .append("text")
+    .attr("x", 0)
+    .attr("dx", 25)
+    .attr("y", 0)
+    .attr("dy", '0.75em')
+    .style("font-size", '14px')
+    .text(d => d.replace("_DOT", ""));
 }
 
 export { drawGroupedBars, removeSVGContent };
