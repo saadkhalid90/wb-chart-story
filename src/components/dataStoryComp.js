@@ -4,9 +4,38 @@ import { useState, useRef, useEffect } from "react";
 import { useData } from "./useData";
 import styles from "./css-modules/dataStoryComp.module.css";
 import { drawGroupedBars, removeSVGContent } from "./drawGroupedBars";
+import React from "react";
+
+const chartMargins = { top: 50, bottom: 20, left: 50, right: 20 };
 
 function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
+  const captions = [
+    <span>
+      At ages 3–5, <b>girls</b> and <b>boys</b> are similar in their experiences
+      of <b>multiple risks to on-track developmental outcomes</b> in Punjab
+      province
+    </span>,
+    <span>
+      For these children, the{" "}
+      <b>likelihood of being developmentally on track</b> is inversely related
+      to the <b>number of risk they face</b>
+    </span>,
+    <span>
+      We do observe some{" "}
+      <b>
+        variation in the distribution of risks to on-track developmental
+        outcomes
+      </b>{" "}
+      across <b>provinces</b>
+    </span>,
+    <span>
+      The inverse relation between the{" "}
+      <b>likelihood of children being developmentally on track</b> and the{" "}
+      <b>risks they face</b> can also be seen for different provinces
+    </span>,
+  ];
   const [vizIndex, setVizIndex] = useState(1);
+  const fade = useRef(true);
   const [clickType, setClickType] = useState("forward");
   const svgRef = useRef();
   const data = useData();
@@ -29,12 +58,21 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
   };
 
   useEffect(() => {
+    //setFade(false);
+    fade.current = true;
+  }, [vizIndex]);
+
+  useEffect(() => {
+    console.log(fade.current);
+  }, [fade.current]);
+
+  useEffect(() => {
     if (data.gender && data.prov) {
       vizIndex === 1
         ? drawGroupedBars(
             svgRef.current,
             data.gender,
-            { top: 50, bottom: 20, left: 50, right: 20 },
+            chartMargins,
             ["Female", "Male"],
             "Number of Risk Factors",
             clickType === "forward" ? "draw" : "update",
@@ -44,7 +82,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
         ? drawGroupedBars(
             svgRef.current,
             data.gender,
-            { top: 50, bottom: 20, left: 50, right: 20 },
+            chartMargins,
             ["Female_DOT", "Male_DOT"],
             "Number of Risk Factors",
             clickType === "forward" ? "update" : "draw",
@@ -54,7 +92,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
         ? drawGroupedBars(
             svgRef.current,
             data.prov,
-            { top: 50, bottom: 20, left: 50, right: 20 },
+            chartMargins,
             ["Punjab", "Sindh", "KP", "Balochistan"],
             "Number of Risk Factors",
             clickType === "forward" ? "draw" : "update",
@@ -63,17 +101,17 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
         : drawGroupedBars(
             svgRef.current,
             data.prov,
-            { top: 50, bottom: 20, left: 50, right: 20 },
+            chartMargins,
             ["Punjab_DOT", "Sindh_DOT", "KP_DOT", "Balochistan_DOT"],
             "Number of Risk Factors",
             "update",
             0.3
           );
-          
-        console.log('useeffect called!')
-        console.log(data);
-        console.log(vizIndex);
-        console.log(clickType);
+
+      console.log("useeffect called!");
+      console.log(data);
+      console.log(vizIndex);
+      console.log(clickType);
     }
   }, [data, vizIndex, clickType]);
 
@@ -96,10 +134,11 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
           <p className={styles.stateShow}>{`${vizIndex}/${maxIndex}`}</p>
         </div>
 
-        <p className={styles.chart_desc}>
-          {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation (${vizIndex})`}
+        <p
+          className={`${styles.chart_desc} ${fade.current && styles.desc_fade}`}
+          onAnimationEnd={() => (fade.current = false)}
+        >
+          {captions[vizIndex - 1]}
         </p>
       </div>
       <div className={styles.chart_contain} style={{ width: "100%" }}>

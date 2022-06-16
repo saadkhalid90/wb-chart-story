@@ -18,7 +18,26 @@
 }
 
 .chevAndStateContainer {
-  width: 25%;
+  width: 15%;
+}
+
+.chart_desc {
+  width: 85%;
+}
+
+.desc_fade {
+  opacity: 0;
+  animation: pFade 0.25s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .storyContainer {

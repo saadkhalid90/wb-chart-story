@@ -14,7 +14,6 @@ function drawGroupedBars(
   type,
   xPadding
 ) {
-  console.log('groupBars Called!')
   // one entry for each bar (for each group flesh out the data and use flatmap to get one consolidated array)
 
   const longData = groups.flatMap((group) =>
@@ -60,16 +59,14 @@ function drawGroupedBars(
     .domain(groups)
     .range(
       groups.length === 2
-        ? ["#AB47BC", "#00796B"]
-        : ["#AB47BC", "#00796B", "#AB47BC", "#00796B"]
+        ? ["#1f78b4", "#b2df8a"]
+        : ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c"]
     );
 
   const xAxis = d3.axisBottom(xScale);
   const yAxis = d3.axisLeft(yScale);
 
   const chartElements = d3.select(svgRef).select("g.chart_elements");
-  //console.log(chartElements);
-  //console.log(checkIfSelectEmpty(chartElements));
 
   if (type === "draw") {
     chartElements.selectAll('*').remove()
@@ -80,23 +77,25 @@ function drawGroupedBars(
       .select(svgRef)
       .append("g")
       .attr("class", "chart_elements")
-      .attr("transform", `translate(${margins.top} ${margins.left})`);
+      .attr("transform", `translate(${margins.left} ${margins.top})`);
 
     const xAxisG = d3
       .select(svgRef)
       .append("g")
       .attr(
         "transform",
-        `translate(${margins.left},${svgHeight - margins.bottom})`
+        `translate(${margins.left} ${svgHeight - margins.bottom + 5})`
       )
       .classed("xAxisG", true)
       .call(xAxis)
-      .style("font-size", "14px");
+      
+    xAxisG.selectAll("text").style("font-size", "18px");
+    xAxisG.selectAll("line").style("opacity", "0");
 
     const yAxisG = d3
       .select(svgRef)
       .append("g")
-      .attr("transform", `translate(${margins.left},${margins.top})`)
+      .attr("transform", `translate(${margins.left - 10} ${margins.top})`)
       .classed("yAxisG", true)
       .call(yAxis)
       .style("font-size", "11px");
@@ -106,19 +105,16 @@ function drawGroupedBars(
     //xAxisG.selectAll("line").style("stroke", "none");
 
     const yAxisText = yAxisG.selectAll("text").attr("font-size", "0.8rem");
-    const xAxisText = xAxisG.selectAll("text").attr("font-size", "1rem");
   }
 
-  let bars = chartElements.selectAll("rect").data(longData);
+  let bars = d3.select("g.chart_elements").selectAll("rect").data(longData);
 
   if (type === "draw") {
-    console.log(longData);
-    console.log(bars);
-    console.log(type);
 
     bars = bars
     //enter
-      .join("rect")
+      .enter()
+      .append("rect")
       .attr("x", (d) => xScale(d.riskFactors) + xzScale(d.group))
       .attr("y", (d) => height)
       .attr("rx", "2px")
@@ -126,8 +122,6 @@ function drawGroupedBars(
       .attr("width", xzScale.bandwidth())
       .attr("height", (d) => 0)
       .attr("fill", (d) => colScale(d.group));
-
-    console.log(bars);
   }
 
   bars
@@ -138,6 +132,10 @@ function drawGroupedBars(
 
   d3.select("g.yAxisG").transition().duration(750).call(yAxis);
   d3.select("g.xAxisG").transition().duration(750).call(xAxis);
+
+  d3.select("g.xAxisG").selectAll("text").style("font-size", "18px");
+  d3.select("g.xAxisG").selectAll("line").style("opacity", "0");
+  d3.select("g.yAxisG").selectAll("text").attr("font-size", "0.8rem");
 }
 
 export { drawGroupedBars, removeSVGContent };
