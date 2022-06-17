@@ -35,7 +35,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
     </span>,
   ];
   const [vizIndex, setVizIndex] = useState(1);
-  const fade = useRef(true);
+  const [pState, setPState] = useState(true);
+  const fade = useRef(false);
   const [clickType, setClickType] = useState("forward");
   const svgRef = useRef();
   const data = useData();
@@ -58,13 +59,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
   };
 
   useEffect(() => {
-    //setFade(false);
-    fade.current = true;
+    fade.current = true; 
   }, [vizIndex]);
-
-  useEffect(() => {
-    console.log(fade.current);
-  }, [fade.current]);
 
   useEffect(() => {
     if (data.gender && data.prov) {
@@ -107,13 +103,15 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             "update",
             0.3
           );
-
-      console.log("useeffect called!");
-      console.log(data);
-      console.log(vizIndex);
-      console.log(clickType);
     }
   }, [data, vizIndex, clickType]);
+
+  function processEnd() {
+    fade.current = false;
+    console.log('end');
+  }
+
+ // console.log(fade.current);
 
   return (
     <div className={styles.storyContainer}>
@@ -136,7 +134,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
 
         <p
           className={`${styles.chart_desc} ${fade.current && styles.desc_fade}`}
-          onAnimationEnd={() => (fade.current = false)}
+          onAnimationEnd={() => (processEnd())}
         >
           {captions[vizIndex - 1]}
         </p>
