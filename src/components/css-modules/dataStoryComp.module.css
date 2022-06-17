@@ -3,12 +3,14 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 15px;
 }
 
 .chevronContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: center;
 }
 
 .chevronContainer svg {
@@ -22,7 +24,8 @@
 .stateShow {
   font-size: 12px;
   font-weight: bold;
-  margin: 3px 0px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 .chevAndStateContainer {
@@ -75,9 +78,37 @@
 .chart_contain {
   display: flex;
   align-items: stretch;
+  height: 500px;
 }
 
 .chart_desc {
   text-align: left;
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .storyContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .storyContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .storyContainer {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .storyContainer {
+    width: 92%;
+  }
+  .chart_desc {
+    font-size: 14px;
+  }
 }
