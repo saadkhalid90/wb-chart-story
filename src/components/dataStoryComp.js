@@ -4,7 +4,10 @@ import { useState, useRef, useEffect } from "react";
 import { useData } from "./useData";
 import styles from "./css-modules/dataStoryComp.module.css";
 import { drawGroupedBars, removeSVGContent } from "./drawGroupedBars";
+import { drawUpset } from "./upset";
 import React from "react";
+
+import { upsetData1, upsetData2, upsetData3, upsetData4 } from "./VennData";
 
 const chartMargins = { top: 100, bottom: 80, left: 50, right: 20 };
 
@@ -32,6 +35,22 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
       The inverse relation between the{" "}
       <b>likelihood of children being developmentally on track</b> and the{" "}
       <b>risks they face</b> can also be seen for different provinces
+    </span>,
+    <span>
+      <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
+      <b>Punjab</b> can be examined in the following upSet plot
+    </span>,
+    <span>
+      <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
+      <b>Sindh</b> can be examined in the following upSet plot
+    </span>,
+    <span>
+      <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
+      <b>KP</b> can be examined in the following upSet plot
+    </span>,
+    <span>
+      <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
+      <b>Balochistan</b> can be examined in the following upSet plot
     </span>,
   ];
   const [vizIndex, setVizIndex] = useState(1);
@@ -82,7 +101,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             "Number of Risk Factors",
             clickType === "forward" ? "update" : "draw",
             0.4,
-            "Children on track development outcomes (by gender)"
+            "Children developmentally on track (by gender)"
           )
         : vizIndex === 3
         ? drawGroupedBars(
@@ -95,16 +114,24 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
             0.3,
             "Children facing risks to on track development outcomes (by province)"
           )
-        : drawGroupedBars(
+        : vizIndex === 4
+        ? drawGroupedBars(
             svgRef.current,
             data.prov,
             chartMargins,
             ["Punjab_DOT", "Sindh_DOT", "KP_DOT", "Balochistan_DOT"],
             "Number of Risk Factors",
-            "update",
+            clickType === "forward" ? "update" : "draw",
             0.3,
-            "Children facing risks to on track development outcomes (by province)"
-          );
+            "Children developmentally on track (by province)"
+          )
+        : vizIndex === 5
+        ? drawUpset(svgRef.current, upsetData1, false)
+        : vizIndex === 6
+        ? drawUpset(svgRef.current, upsetData2, false)
+        : vizIndex === 7
+        ? drawUpset(svgRef.current, upsetData3, false)
+        : drawUpset(svgRef.current, upsetData4, true);
     }
   }, [data, vizIndex, clickType]);
 
@@ -112,7 +139,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
     fade.current.classList.remove(styles.desc_fade);
   }
 
- // console.log(fade.current);
+  // console.log(fade.current);
 
   return (
     <div className={styles.storyContainer}>
@@ -134,7 +161,8 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
         </div>
 
         <p
-          className={`${styles.chart_desc} ${styles.desc_fade}`} ref={fade}
+          className={`${styles.chart_desc} ${styles.desc_fade}`}
+          ref={fade}
           onAnimationEnd={() => processEnd()}
         >
           {captions[vizIndex - 1]}

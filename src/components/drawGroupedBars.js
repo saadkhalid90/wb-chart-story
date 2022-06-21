@@ -17,6 +17,8 @@ function drawGroupedBars(
 ) {
   // one entry for each bar (for each group flesh out the data and use flatmap to get one consolidated array)
 
+  d3.select(svgRef).select("g.upsetPlotG").remove();
+
   const longData = groups.flatMap((group) =>
     data.map((d) => ({
       riskFactors: d[categVar],
@@ -134,6 +136,7 @@ function drawGroupedBars(
     .duration(750)
     .style("fill-opacity", 1)
     .style("fill", "#616161")
+    .style("z-index", 5)
     .attr("dy", "0px");
 
   d3.select("g.chart_elements")
@@ -148,6 +151,7 @@ function drawGroupedBars(
     .duration(750)
     .style("fill-opacity", 1)
     .style("fill", "#616161")
+    .style("z-index", 5)
     .attr("dy", "0px");
 
   if (type === "draw") {
@@ -196,7 +200,8 @@ function removeAndDrawLegend(parentSelection, colScale, separation, margins) {
     .transition()
     .duration(750)
     .attr("dy", "0px")
-    .style("opacity", "1");
+    .style("opacity", "1")
+    .style("z-index", 5);
 
   const legendGrps = legendParentGrp
     .attr("class", "color-legend")
@@ -205,8 +210,6 @@ function removeAndDrawLegend(parentSelection, colScale, separation, margins) {
     .enter()
     .append("g")
     .attr("transform", (d, i) => `translate(${i * separation}, 0)`);
-
-  console.log(legendGrps);
 
   legendGrps
     .append("rect")
