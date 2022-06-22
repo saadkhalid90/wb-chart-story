@@ -133,7 +133,7 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
     .attr("y", (d) => yScaleBar2(d.set))
     .style("opacity", 0)
     .style("font-size", "12px")
-    .attr("dy", isBaloch ? "1em" : "0.75em")
+    .attr("dy", isBaloch ? "0.85em" : "0.75em")
     .text((d) => d.set)
     .transition()
     .duration(750)
