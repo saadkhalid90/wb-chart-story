@@ -4264,93 +4264,236 @@ const upsetData3 = [
 const upsetData4 = [
   {
     comb: [
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 23,
+    value: 21.8,
   },
-  { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 12.8 },
   {
     comb: [
-      "Stunted Growth",
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
-      "No stimulation at home",
     ],
     value: 11.2,
   },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 10.3,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 10.4,
+    value: 10.3,
   },
-  { comb: ["Not enrolled in ECE"], value: 6.1 },
-  { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 5.8 },
   {
-    comb: ["Stunted Growth", "Not enrolled in ECE", "Living in a rural area"],
-    value: 5.6,
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "No stimulation at home",
+    ],
+    value: 5.1,
   },
-  { comb: ["Living in a rural area", "No stimulation at home"], value: 5.5 },
   {
-    comb: ["Poverty", "Not enrolled in ECE", "Living in a rural area"],
-    value: 4.2,
+    comb: [
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 5,
   },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 4.9,
+  },
+  { comb: ["Low Maternal Education", "Not enrolled in ECE"], value: 4.7 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 4.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 2.1,
-  },
-  { comb: ["No stimulation at home"], value: 2.1 },
-  {
-    comb: ["Stunted Growth", "Not enrolled in ECE", "No stimulation at home"],
     value: 2,
   },
   {
-    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "No stimulation at home",
+    ],
     value: 1.6,
   },
-  { comb: ["Stunted Growth", "Not enrolled in ECE"], value: 1.5 },
-  { comb: [], value: 1.2 },
+  { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 1.6 },
+  { comb: ["Low Maternal Education", "No stimulation at home"], value: 1.6 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 1.6,
+  },
+  { comb: ["Not enrolled in ECE"], value: 1.4 },
+  {
+    comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 1.3,
+  },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
     ],
     value: 1.1,
   },
-  { comb: ["Living in a rural area"], value: 0.9 },
-  { comb: ["Stunted Growth", "Living in a rural area"], value: 0.8 },
+  {
+    comb: ["Stunted Growth", "Low Maternal Education", "Not enrolled in ECE"],
+    value: 1.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.9,
+  },
+  { comb: ["Low Maternal Education"], value: 0.8 },
+  { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 0.8 },
+  {
+    comb: ["Stunted Growth", "Not enrolled in ECE", "Living in a rural area"],
+    value: 0.8,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+    ],
+    value: 0.7,
+  },
+  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.6 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.6,
+  },
+  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.6 },
+  { comb: ["No stimulation at home"], value: 0.5 },
+  {
+    comb: ["Low Maternal Education", "Poverty", "Living in a rural area"],
+    value: 0.4,
+  },
+  { comb: ["Stunted Growth", "Not enrolled in ECE"], value: 0.4 },
+  { comb: [], value: 0.3 },
+  {
+    comb: ["Stunted Growth", "Not enrolled in ECE", "No stimulation at home"],
+    value: 0.3,
+  },
+  {
+    comb: ["Low Maternal Education", "Poverty", "Not enrolled in ECE"],
+    value: 0.3,
+  },
+  { comb: ["Living in a rural area"], value: 0.2 },
+  { comb: ["Stunted Growth", "Low Maternal Education"], value: 0.2 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "No stimulation at home",
+    ],
+    value: 0.2,
+  },
+  {
+    comb: [
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: ["Poverty", "Not enrolled in ECE", "Living in a rural area"],
+    value: 0.1,
+  },
+  { comb: ["Stunted Growth", "Living in a rural area"], value: 0.1 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Stunted Growth"], value: 0.1 },
   {
     comb: [
       "Stunted Growth",
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 0.7,
-  },
-  { comb: ["Poverty", "Living in a rural area"], value: 0.4 },
-  { comb: ["Stunted Growth"], value: 0.3 },
-  { comb: ["Poverty", "Not enrolled in ECE"], value: 0.3 },
-  {
-    comb: ["Poverty", "Not enrolled in ECE", "No stimulation at home"],
-    value: 0.2,
+    value: 0.1,
   },
   { comb: ["Stunted Growth", "No stimulation at home"], value: 0.1 },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "No stimulation at home",
@@ -4360,14 +4503,52 @@ const upsetData4 = [
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
       "Poverty",
       "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0,
   },
-  { comb: ["Stunted Growth", "Poverty", "Living in a rural area"], value: 0 },
-  { comb: ["Stunted Growth", "Poverty", "Not enrolled in ECE"], value: 0 },
-  { comb: ["Poverty", "No stimulation at home"], value: 0 },
+  {
+    comb: ["Low Maternal Education", "Poverty", "No stimulation at home"],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0,
+  },
 ];
-export { upsetData1, upsetData2, upsetData3 , upsetData4};
+export { upsetData1, upsetData2, upsetData3, upsetData4 };
