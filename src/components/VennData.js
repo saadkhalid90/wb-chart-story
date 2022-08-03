@@ -6,7 +6,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 5.8,
+    value: 6.2,
   },
   {
     comb: [
@@ -17,7 +17,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 5.6,
+    value: 5.9,
   },
   {
     comb: [
@@ -29,7 +29,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 5.5,
+    value: 5.9,
   },
   {
     comb: [
@@ -37,7 +37,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 4.9,
+    value: 5.1,
   },
   {
     comb: [
@@ -47,7 +47,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 4.4,
+    value: 4.7,
   },
   {
     comb: [
@@ -55,20 +55,20 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 4.1,
+    value: 4.3,
   },
-  { comb: ["Not enrolled in ECE", "Negative punishment"], value: 4 },
-  { comb: ["Negative punishment"], value: 3.3 },
+  { comb: ["Not enrolled in ECE", "Negative punishment"], value: 4.2 },
+  { comb: ["Negative punishment"], value: 3.5 },
   {
     comb: [
       "Not enrolled in ECE",
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 3,
+    value: 3.2,
   },
-  { comb: ["Living in a rural area", "Negative punishment"], value: 2.8 },
-  { comb: ["No stimulation at home", "Negative punishment"], value: 2.8 },
+  { comb: ["Living in a rural area", "Negative punishment"], value: 3 },
+  { comb: ["No stimulation at home", "Negative punishment"], value: 3 },
   {
     comb: [
       "Stunted Growth",
@@ -78,7 +78,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.7,
+    value: 2.9,
   },
   {
     comb: [
@@ -87,7 +87,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.6,
+    value: 2.8,
   },
   {
     comb: [
@@ -97,9 +97,8 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.1,
+    value: 2.3,
   },
-  { comb: ["No stimulation at home"], value: 2.1 },
   {
     comb: [
       "Low Maternal Education",
@@ -107,7 +106,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.1,
+    value: 2.2,
   },
   {
     comb: [
@@ -117,9 +116,8 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.1,
+    value: 2.2,
   },
-  { comb: ["Living in a rural area", "No stimulation at home"], value: 2 },
   {
     comb: [
       "Stunted Growth",
@@ -127,60 +125,35 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 1.4,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 1.2,
+    value: 1.5,
   },
   { comb: ["Not enrolled in ECE"], value: 1.1 },
-  { comb: [], value: 1.1 },
   {
     comb: [
       "Low Maternal Education",
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 1,
+    value: 1.1,
   },
   {
     comb: ["Stunted Growth", "Not enrolled in ECE", "Negative punishment"],
-    value: 1,
+    value: 1.1,
   },
+  { comb: [], value: 1.1 },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
       "Not enrolled in ECE",
-      "Living in a rural area",
       "No stimulation at home",
+      "Negative punishment",
     ],
     value: 1,
   },
   { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 1 },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 1,
-  },
-  {
-    comb: [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -191,12 +164,20 @@ const upsetData1 = [
   },
   {
     comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 1,
+  },
+  {
+    comb: [
       "Stunted Growth",
       "Living in a rural area",
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.9,
+    value: 1,
   },
   {
     comb: [
@@ -225,7 +206,7 @@ const upsetData1 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 0.8,
+    value: 0.9,
   },
   {
     comb: [
@@ -255,7 +236,7 @@ const upsetData1 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 0.7,
+    value: 0.8,
   },
   {
     comb: [
@@ -265,22 +246,22 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.7,
+    value: 0.8,
   },
   { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 0.7 },
-  { comb: ["Low Maternal Education", "No stimulation at home"], value: 0.6 },
+  {
+    comb: ["Stunted Growth", "No stimulation at home", "Negative punishment"],
+    value: 0.7,
+  },
   {
     comb: [
       "Low Maternal Education",
       "Not enrolled in ECE",
       "Negative punishment",
     ],
-    value: 0.6,
+    value: 0.7,
   },
-  {
-    comb: ["Stunted Growth", "No stimulation at home", "Negative punishment"],
-    value: 0.6,
-  },
+  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.6 },
   {
     comb: [
       "Stunted Growth",
@@ -311,29 +292,29 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.5,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.5,
+    value: 0.6,
   },
   { comb: ["Stunted Growth", "Negative punishment"], value: 0.5 },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0.5,
   },
-  { comb: ["Living in a rural area"], value: 0.5 },
+  { comb: ["No stimulation at home"], value: 0.5 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.5,
+  },
   {
     comb: [
       "Stunted Growth",
@@ -343,10 +324,32 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.4,
+    value: 0.5,
   },
   {
     comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.5,
+  },
+  {
+    comb: [
+      "Poverty",
+      "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.4,
+  },
+  { comb: ["Living in a rural area"], value: 0.4 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
@@ -357,15 +360,6 @@ const upsetData1 = [
   },
   {
     comb: [
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.4,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Poverty",
@@ -380,8 +374,6 @@ const upsetData1 = [
       "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
       "No stimulation at home",
       "Negative punishment",
     ],
@@ -393,16 +385,6 @@ const upsetData1 = [
   },
   {
     comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.4,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Not enrolled in ECE",
@@ -411,7 +393,7 @@ const upsetData1 = [
     ],
     value: 0.4,
   },
-  { comb: ["Low Maternal Education", "Negative punishment"], value: 0.3 },
+  { comb: ["Low Maternal Education", "Negative punishment"], value: 0.4 },
   {
     comb: [
       "Low Maternal Education",
@@ -429,14 +411,6 @@ const upsetData1 = [
       "Low Maternal Education",
       "Not enrolled in ECE",
       "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "No stimulation at home",
     ],
     value: 0.3,
   },
@@ -452,6 +426,22 @@ const upsetData1 = [
   },
   {
     comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "No stimulation at home",
+    ],
+    value: 0.3,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.3,
+  },
+  {
+    comb: [
       "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
@@ -471,7 +461,6 @@ const upsetData1 = [
     ],
     value: 0.3,
   },
-  { comb: ["Low Maternal Education", "Not enrolled in ECE"], value: 0.3 },
   {
     comb: [
       "Not enrolled in ECE",
@@ -483,7 +472,7 @@ const upsetData1 = [
   },
   {
     comb: ["Stunted Growth", "Not enrolled in ECE", "No stimulation at home"],
-    value: 0.2,
+    value: 0.3,
   },
   {
     comb: [
@@ -492,9 +481,19 @@ const upsetData1 = [
       "Not enrolled in ECE",
       "No stimulation at home",
     ],
+    value: 0.3,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
     value: 0.2,
   },
   { comb: ["Stunted Growth", "Not enrolled in ECE"], value: 0.2 },
+  { comb: ["Low Maternal Education", "Not enrolled in ECE"], value: 0.2 },
   {
     comb: [
       "Low Maternal Education",
@@ -520,6 +519,16 @@ const upsetData1 = [
     comb: ["Not enrolled in ECE", "Having a disability", "Negative punishment"],
     value: 0.2,
   },
+  { comb: ["Low Maternal Education", "No stimulation at home"], value: 0.2 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
   {
     comb: [
       "Low Maternal Education",
@@ -531,15 +540,10 @@ const upsetData1 = [
   },
   {
     comb: [
-      "Low Maternal Education",
-      "Poverty",
+      "Having a disability",
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.2,
-  },
-  {
-    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
     value: 0.2,
   },
   {
@@ -548,14 +552,6 @@ const upsetData1 = [
   },
   {
     comb: [
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Poverty",
       "Living in a rural area",
@@ -563,32 +559,6 @@ const upsetData1 = [
       "Negative punishment",
     ],
     value: 0.2,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
   },
   {
     comb: [
@@ -611,97 +581,119 @@ const upsetData1 = [
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Poverty",
+      "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0.1,
   },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.1 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Having a disability", "Negative punishment"], value: 0.1 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Stunted Growth"], value: 0.1 },
   {
     comb: ["Stunted Growth", "Low Maternal Education", "Not enrolled in ECE"],
     value: 0.1,
   },
   {
     comb: [
-      "Stunted Growth",
-      "Not enrolled in ECE",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 0.1,
-  },
-  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.1 },
-  { comb: ["Having a disability", "Negative punishment"], value: 0.1 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: ["Low Maternal Education", "Poverty", "No stimulation at home"],
-    value: 0.1,
-  },
-  { comb: ["Stunted Growth"], value: 0.1 },
-  {
-    comb: [
       "Living in a rural area",
       "Having a disability",
       "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Living in a rural area",
+      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -719,27 +711,8 @@ const upsetData1 = [
     comb: ["Poverty", "Living in a rural area", "Negative punishment"],
     value: 0.1,
   },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 0.1,
-  },
   { comb: ["Stunted Growth", "No stimulation at home"], value: 0.1 },
   { comb: ["Low Maternal Education"], value: 0.1 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
   {
     comb: ["Stunted Growth", "Low Maternal Education", "Negative punishment"],
     value: 0.1,
@@ -755,6 +728,15 @@ const upsetData1 = [
   },
   {
     comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
@@ -766,6 +748,8 @@ const upsetData1 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0.1,
@@ -782,17 +766,16 @@ const upsetData1 = [
   },
   {
     comb: [
-      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
+      "Negative punishment",
     ],
     value: 0.1,
   },
   {
     comb: [
+      "Stunted Growth",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -801,16 +784,6 @@ const upsetData1 = [
     value: 0.1,
   },
   { comb: ["Stunted Growth", "Living in a rural area"], value: 0.1 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
   {
     comb: ["Poverty", "No stimulation at home", "Negative punishment"],
     value: 0.1,
@@ -827,6 +800,17 @@ const upsetData1 = [
   },
   {
     comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -850,10 +834,6 @@ const upsetData1 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
       "No stimulation at home",
     ],
     value: 0.1,
@@ -909,6 +889,18 @@ const upsetData1 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
@@ -924,7 +916,7 @@ const upsetData1 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0,
+    value: 0.1,
   },
   {
     comb: [
@@ -933,6 +925,10 @@ const upsetData1 = [
       "Not enrolled in ECE",
       "Negative punishment",
     ],
+    value: 0,
+  },
+  {
+    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
     value: 0,
   },
   {
@@ -968,7 +964,6 @@ const upsetData1 = [
     ],
     value: 0,
   },
-  { comb: ["Poverty", "No stimulation at home"], value: 0 },
   {
     comb: [
       "Low Maternal Education",
@@ -995,16 +990,6 @@ const upsetData1 = [
       "Not enrolled in ECE",
       "Having a disability",
       "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
     ],
     value: 0,
   },
@@ -1017,6 +1002,46 @@ const upsetData1 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Poverty",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
       "Living in a rural area",
     ],
     value: 0,
@@ -1025,52 +1050,12 @@ const upsetData1 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
-      "Having a disability",
-      "Negative punishment",
     ],
     value: 0,
   },
-  {
-    comb: [
-      "Stunted Growth",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Poverty",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Poverty",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0,
-  },
-  { comb: ["Living in a rural area", "Having a disability"], value: 0 },
   { comb: ["Stunted Growth", "Low Maternal Education"], value: 0 },
   {
     comb: [
@@ -1090,6 +1075,10 @@ const upsetData1 = [
     value: 0,
   },
   {
+    comb: ["Low Maternal Education", "Poverty", "No stimulation at home"],
+    value: 0,
+  },
+  {
     comb: [
       "Low Maternal Education",
       "Having a disability",
@@ -1103,6 +1092,15 @@ const upsetData1 = [
       "Stunted Growth",
       "Not enrolled in ECE",
       "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0,
@@ -1145,24 +1143,6 @@ const upsetData1 = [
   { comb: ["Poverty", "Living in a rural area"], value: 0 },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
       "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
@@ -1176,7 +1156,6 @@ const upsetData1 = [
     comb: ["Low Maternal Education", "Poverty", "Living in a rural area"],
     value: 0,
   },
-  { comb: ["Having a disability"], value: 0 },
   {
     comb: [
       "Stunted Growth",
@@ -1216,15 +1195,6 @@ const upsetData1 = [
       "Not enrolled in ECE",
       "Having a disability",
       "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
     ],
     value: 0,
   },
@@ -1251,6 +1221,7 @@ const upsetData1 = [
     comb: ["Poverty", "Not enrolled in ECE", "Living in a rural area"],
     value: 0,
   },
+  { comb: ["Living in a rural area", "Having a disability"], value: 0 },
   {
     comb: [
       "Stunted Growth",
@@ -1285,14 +1256,6 @@ const upsetData1 = [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
     ],
     value: 0,
   },
@@ -1311,6 +1274,15 @@ const upsetData1 = [
       "Living in a rural area",
       "Having a disability",
       "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
     ],
     value: 0,
   },
@@ -1334,6 +1306,15 @@ const upsetData1 = [
   },
   {
     comb: ["Stunted Growth", "Not enrolled in ECE", "Having a disability"],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+    ],
     value: 0,
   },
   {
@@ -1391,6 +1372,15 @@ const upsetData1 = [
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
       "Poverty",
       "Living in a rural area",
       "Having a disability",
@@ -1416,6 +1406,14 @@ const upsetData1 = [
       "Having a disability",
       "No stimulation at home",
       "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
     ],
     value: 0,
   },
@@ -1480,6 +1478,7 @@ const upsetData1 = [
     ],
     value: 0,
   },
+  { comb: ["Poverty", "No stimulation at home"], value: 0 },
   {
     comb: [
       "Poverty",
@@ -1502,7 +1501,7 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 6.2,
+    value: 6.5,
   },
   {
     comb: [
@@ -1514,9 +1513,9 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 5.6,
+    value: 5.8,
   },
-  { comb: ["Not enrolled in ECE", "Negative punishment"], value: 4.1 },
+  { comb: ["Not enrolled in ECE", "Negative punishment"], value: 4.2 },
   {
     comb: [
       "Stunted Growth",
@@ -1525,12 +1524,22 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 4,
+    value: 4.2,
   },
   {
     comb: [
       "Low Maternal Education",
       "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 4,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
@@ -1540,9 +1549,7 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Low Maternal Education",
       "Not enrolled in ECE",
-      "Living in a rural area",
       "No stimulation at home",
       "Negative punishment",
     ],
@@ -1550,43 +1557,35 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Not enrolled in ECE",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 3.5,
-  },
-  {
-    comb: [
       "Low Maternal Education",
       "Not enrolled in ECE",
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 3.5,
+    value: 3.6,
   },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 3.5,
+  },
+  { comb: ["Negative punishment"], value: 3.4 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Negative punishment",
     ],
     value: 3.4,
   },
-  { comb: ["Negative punishment"], value: 3.3 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 3.2,
-  },
   {
     comb: [
       "Low Maternal Education",
@@ -1594,11 +1593,11 @@ const upsetData2 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 3.2,
+    value: 3.3,
   },
   {
     comb: ["Stunted Growth", "Not enrolled in ECE", "Negative punishment"],
-    value: 2.6,
+    value: 2.7,
   },
   {
     comb: [
@@ -1608,7 +1607,7 @@ const upsetData2 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 2.6,
+    value: 2.7,
   },
   {
     comb: [
@@ -1625,7 +1624,7 @@ const upsetData2 = [
       "Not enrolled in ECE",
       "Negative punishment",
     ],
-    value: 2.4,
+    value: 2.5,
   },
   {
     comb: [
@@ -1634,7 +1633,7 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.2,
+    value: 2.3,
   },
   {
     comb: [
@@ -1647,16 +1646,6 @@ const upsetData2 = [
     ],
     value: 2,
   },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 1.5,
-  },
   { comb: ["No stimulation at home", "Negative punishment"], value: 1.5 },
   {
     comb: [
@@ -1665,7 +1654,17 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 1.3,
+    value: 1.4,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 1.4,
   },
   {
     comb: [
@@ -1675,17 +1674,7 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 1.3,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 1.3,
+    value: 1.4,
   },
   {
     comb: [
@@ -1697,13 +1686,32 @@ const upsetData2 = [
   },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 1.2,
+  },
+  {
+    comb: [
       "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 1.1,
+    value: 1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 1,
   },
   { comb: ["Not enrolled in ECE"], value: 1 },
   {
@@ -1715,15 +1723,7 @@ const upsetData2 = [
     ],
     value: 1,
   },
-  {
-    comb: [
-      "Stunted Growth",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 1,
-  },
+  { comb: ["Stunted Growth", "Negative punishment"], value: 0.9 },
   {
     comb: [
       "Low Maternal Education",
@@ -1733,7 +1733,6 @@ const upsetData2 = [
     ],
     value: 0.9,
   },
-  { comb: ["Stunted Growth", "Negative punishment"], value: 0.9 },
   {
     comb: [
       "Low Maternal Education",
@@ -1741,9 +1740,8 @@ const upsetData2 = [
       "Not enrolled in ECE",
       "Living in a rural area",
     ],
-    value: 0.8,
+    value: 0.7,
   },
-  { comb: ["No stimulation at home"], value: 0.8 },
   {
     comb: [
       "Stunted Growth",
@@ -1754,7 +1752,13 @@ const upsetData2 = [
     value: 0.7,
   },
   {
-    comb: ["Stunted Growth", "Low Maternal Education", "Not enrolled in ECE"],
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Negative punishment",
+    ],
     value: 0.6,
   },
   {
@@ -1763,42 +1767,23 @@ const upsetData2 = [
       "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
+      "No stimulation at home",
       "Negative punishment",
     ],
     value: 0.6,
   },
   { comb: ["Stunted Growth", "Not enrolled in ECE"], value: 0.6 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.6,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 0.6,
-  },
   { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 0.6 },
   {
+    comb: ["Stunted Growth", "Low Maternal Education", "Not enrolled in ECE"],
+    value: 0.5,
+  },
+  {
     comb: [
       "Low Maternal Education",
       "Not enrolled in ECE",
       "No stimulation at home",
     ],
-    value: 0.6,
-  },
-  { comb: [], value: 0.5 },
-  {
-    comb: ["Stunted Growth", "Not enrolled in ECE", "No stimulation at home"],
     value: 0.5,
   },
   {
@@ -1812,6 +1797,14 @@ const upsetData2 = [
   {
     comb: [
       "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0.5,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "No stimulation at home",
@@ -1819,12 +1812,9 @@ const upsetData2 = [
     ],
     value: 0.5,
   },
-  { comb: ["Low Maternal Education", "Not enrolled in ECE"], value: 0.5 },
+  { comb: [], value: 0.5 },
   { comb: ["Low Maternal Education", "Negative punishment"], value: 0.4 },
-  {
-    comb: ["Stunted Growth", "Not enrolled in ECE", "Living in a rural area"],
-    value: 0.4,
-  },
+  { comb: ["Low Maternal Education", "Not enrolled in ECE"], value: 0.4 },
   { comb: ["Living in a rural area", "Negative punishment"], value: 0.4 },
   {
     comb: [
@@ -1851,21 +1841,19 @@ const upsetData2 = [
     ],
     value: 0.4,
   },
-  { comb: ["Low Maternal Education", "No stimulation at home"], value: 0.4 },
   {
-    comb: [
-      "Low Maternal Education",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
+    comb: ["Stunted Growth", "Not enrolled in ECE", "No stimulation at home"],
+    value: 0.4,
+  },
+  {
+    comb: ["Stunted Growth", "Not enrolled in ECE", "Living in a rural area"],
     value: 0.4,
   },
   {
     comb: [
       "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
       "No stimulation at home",
+      "Negative punishment",
     ],
     value: 0.4,
   },
@@ -1875,15 +1863,6 @@ const upsetData2 = [
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
-    ],
-    value: 0.4,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0.4,
   },
@@ -1902,38 +1881,30 @@ const upsetData2 = [
     ],
     value: 0.3,
   },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.3,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Negative punishment",
+    ],
+    value: 0.3,
+  },
   { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 0.3 },
   {
     comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
       "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Living in a rural area",
-      "Negative punishment",
     ],
     value: 0.3,
   },
@@ -1983,14 +1954,6 @@ const upsetData2 = [
   {
     comb: [
       "Low Maternal Education",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
       "Not enrolled in ECE",
       "Having a disability",
       "No stimulation at home",
@@ -1998,13 +1961,29 @@ const upsetData2 = [
     ],
     value: 0.2,
   },
-  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.2 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Not enrolled in ECE",
       "Having a disability",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Living in a rural area",
       "Negative punishment",
     ],
     value: 0.2,
@@ -2042,6 +2021,29 @@ const upsetData2 = [
     ],
     value: 0.2,
   },
+  { comb: ["No stimulation at home"], value: 0.2 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
   {
     comb: [
       "Low Maternal Education",
@@ -2058,28 +2060,6 @@ const upsetData2 = [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
       "Negative punishment",
     ],
     value: 0.2,
@@ -2098,32 +2078,12 @@ const upsetData2 = [
   },
   {
     comb: ["Stunted Growth", "Living in a rural area", "Negative punishment"],
-    value: 0.2,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
     value: 0.1,
   },
   {
     comb: ["Stunted Growth", "Low Maternal Education", "Negative punishment"],
     value: 0.1,
   },
-  { comb: ["Low Maternal Education"], value: 0.1 },
   {
     comb: [
       "Low Maternal Education",
@@ -2132,6 +2092,16 @@ const upsetData2 = [
       "Living in a rural area",
       "Having a disability",
       "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -2142,24 +2112,34 @@ const upsetData2 = [
       "Living in a rural area",
       "No stimulation at home",
       "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  { comb: ["Living in a rural area"], value: 0.1 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
     ],
     value: 0.1,
   },
   { comb: ["Stunted Growth"], value: 0.1 },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Living in a rural area"], value: 0.1 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  { comb: ["Low Maternal Education", "No stimulation at home"], value: 0.1 },
+  {
+    comb: [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -2197,6 +2177,7 @@ const upsetData2 = [
     ],
     value: 0.1,
   },
+  { comb: ["Low Maternal Education"], value: 0.1 },
   {
     comb: ["Low Maternal Education", "Poverty", "Not enrolled in ECE"],
     value: 0.1,
@@ -2224,23 +2205,6 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Having a disability",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -2278,7 +2242,6 @@ const upsetData2 = [
     ],
     value: 0.1,
   },
-  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.1 },
   {
     comb: [
       "Poverty",
@@ -2296,53 +2259,71 @@ const upsetData2 = [
       "Having a disability",
       "No stimulation at home",
       "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Having a disability",
     ],
     value: 0.1,
   },
   { comb: ["Stunted Growth", "No stimulation at home"], value: 0.1 },
   {
     comb: [
-      "Poverty",
+      "Stunted Growth",
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
+      "Having a disability",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
       "No stimulation at home",
     ],
     value: 0.1,
   },
+  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.1 },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Not enrolled in ECE",
-      "Living in a rural area",
       "Having a disability",
+      "No stimulation at home",
       "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -2357,22 +2338,12 @@ const upsetData2 = [
     ],
     value: 0.1,
   },
-  { comb: ["Not enrolled in ECE", "Having a disability"], value: 0.1 },
+  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.1 },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Not enrolled in ECE",
-      "Having a disability",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
     ],
@@ -2384,25 +2355,6 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
       "Not enrolled in ECE",
       "Having a disability",
       "No stimulation at home",
@@ -2420,12 +2372,14 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
       "Living in a rural area",
       "No stimulation at home",
     ],
     value: 0.1,
   },
+  { comb: ["Not enrolled in ECE", "Having a disability"], value: 0.1 },
   {
     comb: [
       "Low Maternal Education",
@@ -2435,9 +2389,8 @@ const upsetData2 = [
       "Having a disability",
       "No stimulation at home",
     ],
-    value: 0,
+    value: 0.1,
   },
-  { comb: ["Having a disability", "No stimulation at home"], value: 0 },
   {
     comb: ["Low Maternal Education", "Poverty", "Negative punishment"],
     value: 0,
@@ -2465,15 +2418,21 @@ const upsetData2 = [
   {
     comb: [
       "Low Maternal Education",
-      "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
+      "No stimulation at home",
     ],
     value: 0,
   },
   {
-    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
     value: 0,
   },
   {
@@ -2506,10 +2465,9 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Poverty",
+      "Stunted Growth",
       "Living in a rural area",
       "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0,
   },
@@ -2517,6 +2475,7 @@ const upsetData2 = [
     comb: ["Poverty", "Living in a rural area", "Negative punishment"],
     value: 0,
   },
+  { comb: ["Having a disability", "No stimulation at home"], value: 0 },
   {
     comb: [
       "Stunted Growth",
@@ -2528,12 +2487,11 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Stunted Growth",
       "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0,
   },
@@ -2549,9 +2507,10 @@ const upsetData2 = [
   },
   {
     comb: [
+      "Stunted Growth",
       "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Having a disability",
+      "Living in a rural area",
+      "No stimulation at home",
     ],
     value: 0,
   },
@@ -2602,6 +2561,17 @@ const upsetData2 = [
   },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
       "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
@@ -2623,9 +2593,10 @@ const upsetData2 = [
   },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
       "No stimulation at home",
+      "Negative punishment",
     ],
     value: 0,
   },
@@ -2661,7 +2632,14 @@ const upsetData2 = [
     ],
     value: 0,
   },
-  { comb: ["Poverty", "Not enrolled in ECE"], value: 0 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Having a disability",
+    ],
+    value: 0,
+  },
   {
     comb: [
       "Not enrolled in ECE",
@@ -2684,7 +2662,19 @@ const upsetData2 = [
     value: 0,
   },
   {
+    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
+    value: 0,
+  },
+  {
     comb: ["Stunted Growth", "Having a disability", "Negative punishment"],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "No stimulation at home",
+    ],
     value: 0,
   },
   {
@@ -2706,7 +2696,6 @@ const upsetData2 = [
     value: 0,
   },
   { comb: ["Poverty", "Negative punishment"], value: 0 },
-  { comb: ["Poverty", "No stimulation at home"], value: 0 },
   {
     comb: [
       "Stunted Growth",
@@ -2763,6 +2752,7 @@ const upsetData2 = [
     ],
     value: 0,
   },
+  { comb: ["Poverty", "Not enrolled in ECE"], value: 0 },
   {
     comb: [
       "Stunted Growth",
@@ -2792,7 +2782,6 @@ const upsetData2 = [
     ],
     value: 0,
   },
-  { comb: ["Poverty", "Living in a rural area"], value: 0 },
   {
     comb: [
       "Low Maternal Education",
@@ -2802,10 +2791,6 @@ const upsetData2 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0,
-  },
-  {
-    comb: ["Low Maternal Education", "Poverty", "No stimulation at home"],
     value: 0,
   },
   {
@@ -2832,16 +2817,6 @@ const upsetData2 = [
   {
     comb: [
       "Stunted Growth",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Having a disability",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Having a disability",
@@ -2918,7 +2893,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 12.2,
+    value: 12.6,
   },
   {
     comb: [
@@ -2929,7 +2904,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 8,
+    value: 8.3,
   },
   {
     comb: [
@@ -2940,7 +2915,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 6.3,
+    value: 6.5,
   },
   {
     comb: [
@@ -2952,7 +2927,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 6.2,
+    value: 6.4,
   },
   {
     comb: [
@@ -2961,7 +2936,7 @@ const upsetData3 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 5.9,
+    value: 6.1,
   },
   {
     comb: [
@@ -2970,7 +2945,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 5.3,
+    value: 5.5,
   },
   {
     comb: [
@@ -2978,7 +2953,7 @@ const upsetData3 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 4.6,
+    value: 4.7,
   },
   {
     comb: [
@@ -2988,7 +2963,7 @@ const upsetData3 = [
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 3.8,
+    value: 3.9,
   },
   {
     comb: [
@@ -2998,7 +2973,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.7,
+    value: 2.8,
   },
   {
     comb: [
@@ -3017,7 +2992,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 2.1,
+    value: 2.2,
   },
   {
     comb: [
@@ -3041,15 +3016,6 @@ const upsetData3 = [
   },
   {
     comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 1.8,
-  },
-  {
-    comb: [
       "Not enrolled in ECE",
       "No stimulation at home",
       "Negative punishment",
@@ -3057,6 +3023,15 @@ const upsetData3 = [
     value: 1.7,
   },
   { comb: ["Not enrolled in ECE", "Negative punishment"], value: 1.6 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 1.6,
+  },
   {
     comb: [
       "Living in a rural area",
@@ -3073,7 +3048,7 @@ const upsetData3 = [
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 1.4,
+    value: 1.3,
   },
   {
     comb: [
@@ -3083,16 +3058,15 @@ const upsetData3 = [
       "Living in a rural area",
       "No stimulation at home",
     ],
-    value: 1.3,
+    value: 1.2,
   },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
-      "Poverty",
       "Not enrolled in ECE",
-      "Living in a rural area",
       "No stimulation at home",
+      "Negative punishment",
     ],
     value: 1.1,
   },
@@ -3100,15 +3074,6 @@ const upsetData3 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
-      "Not enrolled in ECE",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 1,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
@@ -3120,15 +3085,17 @@ const upsetData3 = [
     comb: [
       "Low Maternal Education",
       "Not enrolled in ECE",
-      "Living in a rural area",
+      "Negative punishment",
     ],
     value: 0.9,
   },
   {
     comb: [
       "Low Maternal Education",
+      "Poverty",
       "Not enrolled in ECE",
-      "Negative punishment",
+      "Living in a rural area",
+      "No stimulation at home",
     ],
     value: 0.9,
   },
@@ -3138,9 +3105,9 @@ const upsetData3 = [
   },
   {
     comb: [
+      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
-      "No stimulation at home",
     ],
     value: 0.8,
   },
@@ -3155,11 +3122,19 @@ const upsetData3 = [
   },
   {
     comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0.8,
+  },
+  {
+    comb: [
       "Low Maternal Education",
       "Living in a rural area",
       "Negative punishment",
     ],
-    value: 0.8,
+    value: 0.7,
   },
   {
     comb: [
@@ -3173,7 +3148,6 @@ const upsetData3 = [
     ],
     value: 0.7,
   },
-  { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 0.7 },
   { comb: ["Negative punishment"], value: 0.6 },
   {
     comb: [
@@ -3189,28 +3163,28 @@ const upsetData3 = [
   {
     comb: [
       "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-    ],
-    value: 0.6,
-  },
-  {
-    comb: [
-      "Stunted Growth",
       "Not enrolled in ECE",
       "No stimulation at home",
       "Negative punishment",
     ],
     value: 0.6,
   },
+  { comb: ["Not enrolled in ECE", "Living in a rural area"], value: 0.6 },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+    ],
+    value: 0.5,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
       "Living in a rural area",
       "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0.5,
   },
@@ -3220,15 +3194,6 @@ const upsetData3 = [
       "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
-    ],
-    value: 0.5,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
     ],
     value: 0.5,
   },
@@ -3246,25 +3211,23 @@ const upsetData3 = [
     comb: ["Stunted Growth", "Living in a rural area", "Negative punishment"],
     value: 0.4,
   },
-  { comb: ["Not enrolled in ECE"], value: 0.4 },
   {
     comb: [
       "Low Maternal Education",
       "No stimulation at home",
       "Negative punishment",
     ],
-    value: 0.3,
+    value: 0.4,
   },
-  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.3 },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
       "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
     ],
-    value: 0.3,
+    value: 0.4,
   },
   {
     comb: [
@@ -3278,71 +3241,45 @@ const upsetData3 = [
     ],
     value: 0.3,
   },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0.3,
-  },
+  { comb: ["Not enrolled in ECE"], value: 0.3 },
   { comb: ["No stimulation at home", "Negative punishment"], value: 0.3 },
+  {
+    comb: [
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.3,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.3,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Poverty",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.3,
+  },
   {
     comb: ["Stunted Growth", "Not enrolled in ECE", "Living in a rural area"],
     value: 0.3,
   },
   {
     comb: [
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.3,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Poverty",
@@ -3357,9 +3294,10 @@ const upsetData3 = [
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Not enrolled in ECE",
       "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0.3,
   },
@@ -3378,7 +3316,17 @@ const upsetData3 = [
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Not enrolled in ECE",
+      "No stimulation at home",
+    ],
+    value: 0.3,
+  },
+  { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 0.2 },
+  {
+    comb: [
+      "Stunted Growth",
       "Living in a rural area",
+      "No stimulation at home",
       "Negative punishment",
     ],
     value: 0.2,
@@ -3393,34 +3341,23 @@ const upsetData3 = [
   },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
       "Not enrolled in ECE",
-      "No stimulation at home",
+      "Living in a rural area",
+      "Having a disability",
+      "Negative punishment",
     ],
     value: 0.2,
   },
-  { comb: ["Not enrolled in ECE", "No stimulation at home"], value: 0.2 },
+  { comb: ["Living in a rural area", "No stimulation at home"], value: 0.2 },
   {
     comb: ["Stunted Growth", "Low Maternal Education", "Not enrolled in ECE"],
     value: 0.2,
   },
   {
     comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
       "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
       "Not enrolled in ECE",
       "Living in a rural area",
-      "Having a disability",
       "Negative punishment",
     ],
     value: 0.2,
@@ -3432,34 +3369,32 @@ const upsetData3 = [
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
-      "No stimulation at home",
+      "Negative punishment",
     ],
     value: 0.2,
   },
-  { comb: ["Low Maternal Education", "Negative punishment"], value: 0.2 },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "Negative punishment",
+    ],
+    value: 0.2,
+  },
   { comb: ["Living in a rural area"], value: 0.2 },
   {
     comb: [
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0.2,
-  },
-  {
-    comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
-      "Negative punishment",
+      "No stimulation at home",
     ],
     value: 0.2,
   },
   { comb: ["Stunted Growth", "Not enrolled in ECE"], value: 0.2 },
-  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.2 },
   {
     comb: [
       "Low Maternal Education",
@@ -3470,6 +3405,8 @@ const upsetData3 = [
     ],
     value: 0.2,
   },
+  { comb: ["Low Maternal Education", "Living in a rural area"], value: 0.2 },
+  { comb: ["Low Maternal Education", "Negative punishment"], value: 0.2 },
   {
     comb: [
       "Stunted Growth",
@@ -3486,6 +3423,16 @@ const upsetData3 = [
       "Stunted Growth",
       "Not enrolled in ECE",
       "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
       "No stimulation at home",
       "Negative punishment",
     ],
@@ -3530,6 +3477,14 @@ const upsetData3 = [
       "Not enrolled in ECE",
       "No stimulation at home",
       "Negative punishment",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -3549,9 +3504,11 @@ const upsetData3 = [
   },
   {
     comb: [
+      "Stunted Growth",
       "Low Maternal Education",
       "Poverty",
       "Living in a rural area",
+      "No stimulation at home",
       "Negative punishment",
     ],
     value: 0.1,
@@ -3573,20 +3530,6 @@ const upsetData3 = [
       "Low Maternal Education",
       "No stimulation at home",
       "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  { comb: ["No stimulation at home"], value: 0.1 },
-  { comb: ["Stunted Growth", "Living in a rural area"], value: 0.1 },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -3597,20 +3540,22 @@ const upsetData3 = [
   {
     comb: [
       "Stunted Growth",
-      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
+      "Negative punishment",
     ],
     value: 0.1,
   },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
-      "Negative punishment",
+      "No stimulation at home",
     ],
     value: 0.1,
   },
@@ -3623,13 +3568,15 @@ const upsetData3 = [
     ],
     value: 0.1,
   },
+  { comb: ["Stunted Growth", "Living in a rural area"], value: 0.1 },
   { comb: [], value: 0.1 },
   {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
+      "Not enrolled in ECE",
       "Living in a rural area",
-      "No stimulation at home",
+      "Having a disability",
     ],
     value: 0.1,
   },
@@ -3669,50 +3616,32 @@ const upsetData3 = [
   },
   {
     comb: [
+      "Stunted Growth",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Having a disability",
+      "No stimulation at home",
+    ],
+    value: 0.1,
+  },
+  { comb: ["No stimulation at home"], value: 0.1 },
+  {
+    comb: [
       "Low Maternal Education",
       "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
       "Negative punishment",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Not enrolled in ECE",
-      "Having a disability",
-      "No stimulation at home",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Living in a rural area",
-    ],
-    value: 0.1,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
     ],
     value: 0.1,
   },
@@ -3752,11 +3681,18 @@ const upsetData3 = [
   },
   {
     comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "No stimulation at home",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
       "Low Maternal Education",
       "Poverty",
       "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
       "Negative punishment",
     ],
     value: 0,
@@ -3794,18 +3730,6 @@ const upsetData3 = [
       "Stunted Growth",
       "Low Maternal Education",
       "Poverty",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0,
-  },
-  {
-    comb: ["Poverty", "Not enrolled in ECE", "Living in a rural area"],
-    value: 0,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
       "Not enrolled in ECE",
       "Living in a rural area",
       "Having a disability",
@@ -3816,15 +3740,6 @@ const upsetData3 = [
     comb: ["Stunted Growth", "Low Maternal Education", "Negative punishment"],
     value: 0,
   },
-  { comb: ["Low Maternal Education", "No stimulation at home"], value: 0 },
-  {
-    comb: [
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "Having a disability",
-    ],
-    value: 0,
-  },
   {
     comb: [
       "Stunted Growth",
@@ -3853,13 +3768,14 @@ const upsetData3 = [
     value: 0,
   },
   {
+    comb: ["Poverty", "Not enrolled in ECE", "Living in a rural area"],
+    value: 0,
+  },
+  {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
       "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0,
   },
@@ -3902,20 +3818,10 @@ const upsetData3 = [
   },
   {
     comb: [
-      "Stunted Growth",
       "Low Maternal Education",
       "Poverty",
       "Living in a rural area",
-      "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Low Maternal Education",
-      "Poverty",
       "No stimulation at home",
-      "Negative punishment",
     ],
     value: 0,
   },
@@ -3936,23 +3842,34 @@ const upsetData3 = [
       "Having a disability",
       "No stimulation at home",
       "Negative punishment",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
     ],
     value: 0,
   },
   { comb: ["Low Maternal Education"], value: 0 },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
+    ],
+    value: 0,
+  },
   { comb: ["Having a disability", "Negative punishment"], value: 0 },
   {
     comb: [
       "Stunted Growth",
+      "Low Maternal Education",
+      "Living in a rural area",
+      "Having a disability",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
       "Poverty",
       "Living in a rural area",
       "Negative punishment",
@@ -3966,6 +3883,14 @@ const upsetData3 = [
       "Living in a rural area",
       "No stimulation at home",
       "Negative punishment",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Not enrolled in ECE",
+      "Living in a rural area",
+      "Having a disability",
     ],
     value: 0,
   },
@@ -3981,10 +3906,6 @@ const upsetData3 = [
     value: 0,
   },
   {
-    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
-    value: 0,
-  },
-  {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
@@ -3996,28 +3917,18 @@ const upsetData3 = [
   },
   {
     comb: [
-      "Stunted Growth",
+      "Low Maternal Education",
       "Poverty",
-      "Not enrolled in ECE",
-      "Living in a rural area",
-      "No stimulation at home",
-    ],
-    value: 0,
-  },
-  {
-    comb: [
-      "Stunted Growth",
       "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
+      "Negative punishment",
     ],
     value: 0,
   },
   {
     comb: [
       "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
       "Living in a rural area",
       "Having a disability",
       "No stimulation at home",
@@ -4075,10 +3986,6 @@ const upsetData3 = [
   },
   { comb: ["Stunted Growth"], value: 0 },
   {
-    comb: ["Low Maternal Education", "Poverty", "Living in a rural area"],
-    value: 0,
-  },
-  {
     comb: [
       "Stunted Growth",
       "Low Maternal Education",
@@ -4093,6 +4000,16 @@ const upsetData3 = [
       "Low Maternal Education",
       "Not enrolled in ECE",
       "Having a disability",
+    ],
+    value: 0,
+  },
+  {
+    comb: [
+      "Stunted Growth",
+      "Low Maternal Education",
+      "Poverty",
+      "Living in a rural area",
+      "Negative punishment",
     ],
     value: 0,
   },
@@ -4146,21 +4063,16 @@ const upsetData3 = [
   },
   {
     comb: [
-      "Low Maternal Education",
+      "Stunted Growth",
       "Poverty",
+      "Not enrolled in ECE",
       "Living in a rural area",
-      "Having a disability",
+      "No stimulation at home",
     ],
     value: 0,
   },
-  { comb: ["Stunted Growth", "Poverty", "Living in a rural area"], value: 0 },
   {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Living in a rural area",
-      "Having a disability",
-    ],
+    comb: ["Low Maternal Education", "Poverty", "Living in a rural area"],
     value: 0,
   },
   {
@@ -4175,15 +4087,7 @@ const upsetData3 = [
     value: 0,
   },
   {
-    comb: [
-      "Stunted Growth",
-      "Low Maternal Education",
-      "Poverty",
-      "Living in a rural area",
-      "Having a disability",
-      "No stimulation at home",
-      "Negative punishment",
-    ],
+    comb: ["Poverty", "Living in a rural area", "No stimulation at home"],
     value: 0,
   },
   {
@@ -4248,6 +4152,15 @@ const upsetData3 = [
   },
   {
     comb: ["Poverty", "No stimulation at home", "Negative punishment"],
+    value: 0,
+  },
+  {
+    comb: [
+      "Low Maternal Education",
+      "Poverty",
+      "No stimulation at home",
+      "Negative punishment",
+    ],
     value: 0,
   },
   {
@@ -4551,4 +4464,5 @@ const upsetData4 = [
     value: 0,
   },
 ];
+
 export { upsetData1, upsetData2, upsetData3, upsetData4 };

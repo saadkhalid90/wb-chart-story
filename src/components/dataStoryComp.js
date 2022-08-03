@@ -6,10 +6,82 @@ import styles from "./css-modules/dataStoryComp.module.css";
 import { drawGroupedBars, removeSVGContent } from "./drawGroupedBars";
 import { drawUpset } from "./upset";
 import React from "react";
+import { sum } from "d3";
 
 import { upsetData1, upsetData2, upsetData3, upsetData4 } from "./VennData";
 
-const chartMargins = { top: 100, bottom: 80, left: 50, right: 20 };
+const riskFactorsDescP = (
+  <p>
+    <b>Note:</b> Risk factors include being stunted, having a mother with less than
+    primary education, not being enrolled in early childhood education, being in
+    the poorest wealth quintile, living in a rural area, having a functional
+    disability, and not experiencing adequate stimulation at home (engaged in
+    less than four stimulating activities with any household caregiver over
+    three days).
+  </p>
+);
+
+const upsetDescP = (
+  <p>
+    <b>Note:</b> The vertical bars show 20 most important combinations of risks
+  </p>
+);
+
+const footerArr = [
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Survey in Punjab.
+    </p>
+    {riskFactorsDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Survey in Punjab.
+    </p>
+    {riskFactorsDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Surveys in Punjab, Sindh, Khyber Pakhtunkhwa and
+      Balochistan
+    </p>
+    {riskFactorsDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Surveys in Punjab, Sindh, Khyber Pakhtunkhwa and
+      Balochistan
+    </p>
+    {riskFactorsDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Survey in Punjab
+    </p>
+    {upsetDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Survey in Sindh
+    </p>
+    {upsetDescP}
+  </div>,
+  <div>
+    <p>
+      <b>Source:</b> World Bank staff calculations using data from the Multiple
+      Indicator Cluster Survey in Khyber Pakhtunkhwa
+    </p>
+    {upsetDescP}
+  </div>,
+];
+
+const chartMargins = { top: 120, bottom: 70, left: 50, right: 20 };
 
 function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
   const captions = [
@@ -38,19 +110,19 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
     </span>,
     <span>
       <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
-      <b>Punjab</b> can be examined in the following upSet plot
+      <b>Punjab</b> can be examined in the figure below
     </span>,
     <span>
       <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
-      <b>Sindh</b> can be examined in the following upSet plot
+      <b>Sindh</b> can be examined in the figure below
     </span>,
     <span>
       <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
-      <b>KP</b> can be examined in the following upSet plot
+      <b>Khyber Pakhtunkhwa</b> can be examined in the figure below
     </span>,
     <span>
       <b>Co-occurrence</b> of the <b>various risk factors</b> among children in{" "}
-      <b>Balochistan</b> can be examined in the following upSet plot
+      <b>Balochistan</b> can be examined in the figure below
     </span>,
   ];
   const [vizIndex, setVizIndex] = useState(1);
@@ -179,6 +251,7 @@ function DataStoryComp({ maxIndex, svgWidth, svgHeight }) {
           viewBox={`0 0 ${svgWidth} ${svgHeight}`}
         />
       </div>
+      <div className={styles.notesContain}>{footerArr[vizIndex - 1]}</div>
     </div>
   );
 }

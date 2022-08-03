@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { scaleLinear, svg } from "d3";
+import { descending, scaleLinear, svg } from "d3";
 
 function drawUpset(svgRef, dataComplete, isBaloch = false) {
   removeAllSvgElements(d3.select(svgRef));
@@ -9,6 +9,8 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
 
   const aggData = computeAggregateSets(dataComplete);
 
+  console.log(aggData);
+
   let data = dataComplete.filter((d, i) => i < 20);
   data = data.sort((a, b) => b.value - a.value);
 
@@ -16,13 +18,16 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
   const svgWidth = viewBox[2];
   const svgHeight = viewBox[3];
 
-  const bars1Margin = { top: 20, bottom: 180, left: 280, right: 10 };
+  const chartMargin = { top: 40, bottom: 0, left: 0, right: 0 };
+  const bars1Margin = { top: 20, bottom: 190, left: 280, right: 10 };
   const bars2Margin = { top: 360, bottom: 50, left: 10, right: 680 };
   const gridMargin = { top: 360, bottom: 50, left: 280, right: 10 };
 
   // Effective width and height for the bars1 group
   const bars1Width = svgWidth - bars1Margin.left - bars1Margin.right;
   const bars1Height = svgHeight - bars1Margin.top - bars1Margin.bottom;
+
+  console.log(bars1Width);
 
   const gridWidth = svgWidth - gridMargin.left - gridMargin.right;
   const gridHeight = svgHeight - gridMargin.top - gridMargin.bottom;
@@ -50,7 +55,11 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
     .range([0, bars2Height])
     .paddingInner(0.35);
 
-  const upsetPlotG = d3.select(svgRef).append("g").attr("class", "upsetPlotG");
+  const upsetPlotG = d3
+    .select(svgRef)
+    .append("g")
+    .attr("class", "upsetPlotG")
+    .attr("transform", `translate(${chartMargin.left} ${chartMargin.top})`);
 
   const bars1Grp = upsetPlotG
     .append("g")
@@ -142,8 +151,8 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
   bars2G
     .append("text")
     .attr("class", "value_labels")
-    .attr("x", (d) => bars2Width - xScaleBar2(d.value) -  35)
-    .attr("y", (d) => yScaleBar2(d.set) + yScaleBar2.bandwidth() )
+    .attr("x", (d) => bars2Width - xScaleBar2(d.value) - 35)
+    .attr("y", (d) => yScaleBar2(d.set) + yScaleBar2.bandwidth())
     .attr("dy", isBaloch ? "-0.25em" : "0em")
     .style("opacity", 0)
     .style("font-size", "12px")
@@ -164,6 +173,8 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
   const cellHeight = gridHeight / gridData.length;
   const cellWidth = gridWidth / data.length;
 
+  console.log(gridWidth);
+
   const gridRows = gridGrp
     .selectAll("g")
     .data(gridData)
@@ -172,7 +183,7 @@ function drawUpset(svgRef, dataComplete, isBaloch = false) {
     .attr("class", "gridRow")
     .attr("transform", (d, i) => `translate(${0} ${i * cellHeight})`);
 
-  const cellPadding = 2;
+  const cellPadding = 1;
 
   gridRows
     .selectAll("rect")
@@ -197,7 +208,7 @@ function removeAllSvgElements(svgContainer) {
   svgContainer.selectAll("*").remove();
 }
 
-function computeAggregateSets(data) {
+function computeAggregateSets(data, descending = true) {
   const sortedData = data.sort((a, b) => b.value - a.value);
 
   const sortedDataSpread = sortedData.flatMap((entry) =>
@@ -218,7 +229,7 @@ function computeAggregateSets(data) {
       value: sum,
     });
   }
-  return setCount.sort((a, b) => a.value - b.value);
+  return setCount.sort((a, b) => descending ? b.value - a.value : a.value - b.value);
 }
 
 function computeGridData(data, aggData) {
